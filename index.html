@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greeting Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    h1 {
+      color: #007BFF;
+    }
+    p {
+      font-size: 18px;
+    }
+    #dynamicID {
+      font-size: 20px;
+      font-weight: bold;
+      color: #28a745;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <p>Welcome to my Linux-powered web page!</p>
+  <!-- Placeholder for the ID -->
+  <p id="dynamicID">Loading ID...</p>
+  
+  <script>
+    // A function to calculate a complicated math equation
+    function calculateID() {
+      // Example of a "complicated" math equation
+      let result = Math.floor(((Math.sqrt(256) + Math.log(1024)) * 42) / 2);
+      return result;
+    }
+
+    // Function to display the calculated ID in the HTML
+    function displayID() {
+      let idElement = document.getElementById('dynamicID');
+      idElement.textContent = 'ID: ' + calculateID();
+    }
+
+    // Call displayID function when the page loads
+    window.onload = function() {
+      displayID();
+    };
+  </script>
+</body>
+</html>
